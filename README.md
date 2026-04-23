@@ -21,6 +21,13 @@ Then work through [`POSTINSTALL.md`](POSTINSTALL.md) for the manual steps (accou
 
 Both scripts are **idempotent** — re-running them is safe and only installs what's missing.
 
+## Reference cheatsheets
+
+New to the terminal or git? Start here:
+
+- [`TERMINAL_COMMANDS.md`](TERMINAL_COMMANDS.md) — top 20 terminal commands (navigation, file ops, search, processes, networking)
+- [`GITHUB_COMMANDS.md`](GITHUB_COMMANDS.md) — top 10 git/GitHub commands (daily workflow, branching, `gh` CLI basics)
+
 ### Useful flags
 
 ```
@@ -149,6 +156,8 @@ dev-starter/
 ├── bootstrap_macos.sh                # idempotent macOS installer
 ├── bootstrap_linux.sh                # idempotent Ubuntu/Debian installer
 ├── POSTINSTALL.md                    # manual follow-up steps
+├── TERMINAL_COMMANDS.md              # top 20 terminal commands cheatsheet
+├── GITHUB_COMMANDS.md                # top 10 git/GitHub commands cheatsheet
 ├── .gitignore
 └── templates/
     ├── docker-compose.postgres.yml   # Postgres 16 + volume + healthcheck
