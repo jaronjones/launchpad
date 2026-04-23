@@ -1,0 +1,54 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](fg:bright-blue)\
+$directory\
+$git_branch\
+$git_status\
+$golang\
+$nodejs\
+$docker_context\
+$cmd_duration\
+$line_break\
+$character"""
+
+add_newline = true
+
+[directory]
+style = "bold fg:bright-blue"
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+symbol = " "
+style = "fg:purple"
+format = '[ $symbol$branch]($style) '
+
+[git_status]
+style = "fg:red"
+format = '([\[$all_status$ahead_behind\]]($style) )'
+
+[golang]
+symbol = " "
+style = "fg:cyan"
+format = '[$symbol($version )]($style)'
+
+[nodejs]
+symbol = " "
+style = "fg:green"
+format = '[$symbol($version )]($style)'
+
+[docker_context]
+symbol = " "
+style = "fg:blue"
+format = '[$symbol$context]($style) '
+only_with_files = true
+
+[cmd_duration]
+min_time = 2_000
+style = "fg:yellow"
+format = '[ $duration]($style) '
+
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[❯](bold red)'

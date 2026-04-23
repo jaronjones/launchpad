@@ -1,0 +1,29 @@
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+.nvim.lua
+.exrc
+Session.vim
+
+# Per-project Claude state
+.claude/
+
+# Env
+.env
+.env.local
+.envrc.local
+
+# direnv
+.direnv/
+
+# Temp
+tmp/
+*.log
